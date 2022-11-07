@@ -271,7 +271,7 @@ hr {
 }
 
 .about- {
-    margin: 10% 10% 0% 10% ;
+    margin: 5% 10% 0% 10% ;
     padding: 40px 0;
 }
 
@@ -327,3 +327,12 @@ hr {
     text-decoration: underline;
 }
 
+
+/* nilakshi about section */
+
+.wrapper {
+    background: url(https://img.freepik.com/premium-photo/group-divers…riends-taking-selfie-beach_53876-91925.jpg?w=2000) no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+    height: 80vh;
+}
