@@ -249,7 +249,9 @@ hr {
     color: hsl(0, 0%, 98%);
     /* margin-top: 30px; */
 }
-
+.box-button{
+    z-index: 99;
+}
 
 .box-button button{
     padding: 10px 20px;
@@ -258,7 +260,6 @@ hr {
     border: 2px solid hsl(0, 0%, 98%);
     color: hsl(0, 0%, 98%);
     display: inline-block;
-    z-index: 2;
 }
 
 .box-button button:hover {
@@ -269,7 +270,7 @@ hr {
 .box img{
     position: absolute;
     right: 0;
-    z-index: 0;
+    z-index: 9;
     height: 20vh;
 }
 
