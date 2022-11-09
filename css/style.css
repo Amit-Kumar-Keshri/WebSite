@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
+
 body{
     /* font-family: 'Mulish', sans-serif; */
     font-family: 'Space Grotesk', sans-serif;
@@ -166,6 +167,11 @@ hr {
     font-size: 10px;
 }
 
+.home-text button:hover{
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+}
+
 .right-corner{
     position: absolute;
     z-index: 2;
@@ -226,12 +232,14 @@ hr {
 .box{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     border: 2px solid black;
     width: 82vw;
     height: 20vh;
     margin: 8% 9.5%;
     background-color: hsl(256, 26%, 20%);
     position: relative;
+    
 }
 
 .box-container h1{
@@ -239,23 +247,29 @@ hr {
     font-size: 48px;
     width: 60%;
     color: hsl(0, 0%, 98%);
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
+
 
 .box-button button{
     padding: 10px 20px;
     background-color: transparent;
-    margin-top: 45%;
+    /* margin-top: 45%; */
     border: 2px solid hsl(0, 0%, 98%);
     color: hsl(0, 0%, 98%);
-    
-    
+    display: inline-block;
+    z-index: 2;
 }
 
-.box-button img{
+.box-button button:hover {
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+}
+
+.box img{
     position: absolute;
     right: 0;
-    z-index: 1;
+    z-index: 0;
     height: 20vh;
 }
 
@@ -333,6 +347,6 @@ hr {
 .wrapper {
     background: url(https://img.freepik.com/premium-photo/group-divers…riends-taking-selfie-beach_53876-91925.jpg?w=2000) no-repeat;
     background-size: cover;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     height: 80vh;
 }
