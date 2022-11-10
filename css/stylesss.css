@@ -5,11 +5,6 @@
   padding: 0;
 }
 
-/* @font-face {
-  font-family: page-font;
-  src: url(font/spacegr.ttf);
-} */
-
 body {
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -74,47 +69,27 @@ ul.navbar>li a:hover {
   border-radius: 8px;
 }
 
-#banner {
-  background: url("https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg");
-  background-size: cover;
-  background-position: center;
-  max-height: 200px;
-  max-width: 100%;
-}
-
-
-.bannerprop {
+.banner {
+  background: url("https://png.pngtree.com/thumb_back/fh260/back_pic/02/50/63/71577e1cf59d802.jpg");
+  margin-top: 1%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  /* margin-top: 3%; */
-  margin-bottom: 10px;
-}
-
-.logo {
   height: 200px;
-  display: flex;
-  align-items: center;
+  color: ghostwhite;
 }
 
-.logo-design {
-  width: 250px;
+.banner .banner-text{
+  font-size: 80px;
 }
 
 
-
-.banner-text {
-  text-align: center;
-  color: rgb(105 77 179);
-  font-size: 40px;
-}
 
 #blog-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #a7d317), url(img/blog3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #17d36c6c);
   background-size: cover;
   height: 100%;
-  margin-bottom: 10px;
+  margin-top: 1%;
 }
 
 #blog-section h1 {
@@ -129,7 +104,7 @@ ul.navbar>li a:hover {
 .blog-box {
   width: 95%;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
 }
@@ -210,7 +185,7 @@ hr {
 /* about-section */
 
 .about {
-  /* margin: 10%; */
+  margin-top: 1%; 
   background-color: hsl(0, 0%, 98%);
 }
 
@@ -275,4 +250,65 @@ hr {
 .credit span {
   color: purple;
   text-decoration: underline;
+}
+
+@media (min-width:1367px) and (max-width:1440px){
+  h1{
+      font-size: 48px;
+  }
+  
+  h2{
+      font-size: 28px;
+  }
+  
+  p{
+      text-align: justify;
+      font-size: 16px;
+  }
+}
+
+@media (min-width:1281px) and (max-width:1366px){
+  h1{
+      font-size: 42px !important;
+  }
+  
+  h2{
+      font-size: 24px !important;
+  }
+  
+  p{
+      text-align: justify;
+      font-size: 15px !important;
+  }
+}
+
+@media (min-width:1025px) and (max-width:1280px){
+  h1{
+      font-size: 38px !important;
+  }
+  
+  h2{
+      font-size: 22px !important;
+  }
+  
+  p{
+      text-align: justify;
+      font-size: 14px !important;
+  }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+  .blog-box{
+    display:inline-block;
+  }
+}
+
+@media (min-width:375px) and (max-width:767px){
+  .blog-box{
+    display:inline-block;
+  }
+}
+
+@media (min-width:481px) and (max-width:991px) and (orientation:landscape){
+  
 }
