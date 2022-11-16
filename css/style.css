@@ -1031,7 +1031,8 @@ h2:after {
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color: orange;
+    /* background-color: orange; */
+    background-color: #2d2640;
 }
 
 .field {
@@ -1054,16 +1055,17 @@ textarea {
 }
 
 .btn {
-    width: 40%;
+    width: 30%;
     padding: 0.5rem 1rem;
-    background-color: orange;
+    /* background-color: orange; */
+    background-color: #2d2640;
     color: #fff;
     font-size: 1.1rem;
     border: none;
     outline: none;
     cursor: pointer;
     transition: .3s;
-
+    margin-left: 35%;
 }
 
 .btn:hover {
@@ -1265,7 +1267,6 @@ a {
     .logo,
     .navbar {
         margin: 10px;
-        font-size: 17px;
     }
 
     button.ham_burg_menu {
@@ -1378,9 +1379,9 @@ a {
 
 @media (max-width:750px) {
     .col_box_main>div {
-        width: 100%;
+        width: 90%;
         /* margin-bottom: 20px; */
-        margin: 0 0 20px 0;
+        margin: 0 0 20px 20px;
         padding: 0;
     }
 
@@ -1400,4 +1401,13 @@ a {
     .contact_form {
         margin-top: 30px;
     }
+}
+
+
+.error {
+    color: red;
+}
+
+label.error {
+    display: inline;
 }
