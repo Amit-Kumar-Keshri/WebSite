@@ -44,6 +44,7 @@ ul.navbar li {
 .navbar {
     margin: 15px auto;
     padding: 0;
+    font-size: 17px;
 
 }
 
@@ -1263,7 +1264,8 @@ a {
 
     .logo,
     .navbar {
-        margin: 10px auto;
+        margin: 10px;
+        font-size: 17px;
     }
 
     button.ham_burg_menu {
