@@ -11,6 +11,8 @@ jQuery(document).ready(function(){
         i++;
     }, 1000);
     mobile_menu_init();
+    
+
 });
 
 
@@ -18,7 +20,6 @@ jQuery(document).ready(function(){
 jQuery(document).on('click', '.ham_burg_menu', function(){
     jQuery('ul.navbar').slideToggle();
 });
-
 
 
 jQuery(window).resize(function(){
@@ -36,5 +37,26 @@ function mobile_menu_init() {
         jQuery('.ham_burg_menu').remove();
         console.log('This is not Mobile');
     }
+
+};
+
+function validateForm() {
+  var x = document.forms["myForm"]["name"].value;
+  if (x == "" || x == null) {
+    alert("Name must be filled out");
+    return false;
+  }
 }
+
+function contact_us_accordion() {
+    console.log('Accrodion Scripts');
+    jQuery('.accordion_section').find('p').hide();
+    jQuery('.accordion_section > div:first-child').find('p').slideDown();
+}
+
+
+
+jQuery(document).on('click', '.accordion_section h3', function(){
+    jQuery(this).parent('div').find('p').slideToggle();
+});
 
