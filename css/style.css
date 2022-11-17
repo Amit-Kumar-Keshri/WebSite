@@ -1392,6 +1392,10 @@ a {
         padding: 0;
     }
 
+    .col_box_main {
+        margin-left: 0px;
+    }
+
     .col_box_main>div h2 {
         font-size: 25px;
         margin-top: 10px;
