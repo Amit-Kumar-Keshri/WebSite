@@ -60,7 +60,6 @@ jQuery(document).on('click','.contact_submit', function(event){
 
     jQuery(".error").remove();
     if(name.length==0 || email.length==0|| phone.length==0){
-        alert("field the blank fields");
     }
     if(name.length < 2){
         // alert("enter the valid number");
