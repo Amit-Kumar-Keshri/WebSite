@@ -59,9 +59,9 @@ jQuery(document).on('click','.contact_submit', function(event){
     var phone = jQuery('#phone').val();
 
     jQuery(".error").remove();
-    if(name.length==0 || email.length==0|| phone.length==0){
-        alert("field the blank fields");
-    }
+    // if(name.length==0 || email.length==0|| phone.length==0){
+    //     alert("field the blank fields");
+    // }
     if(name.length < 2){
         // alert("enter the valid number");
         jQuery('#name').after('<span class="error">This field is required</span>');
@@ -78,11 +78,11 @@ jQuery(document).on('click','.contact_submit', function(event){
             flag = false
         }
     }
-    if (phone.length!=10){
+    if (phone.length < 3){
         jQuery('#phone').after('<span class="error">This field is required</span>');
         flag = false
     } else {
-        var regex_phone =  /^(?:(?:\+|0{0,2})91(\s*|[\-])?|[0]?)?([6789]\d{2}([ -]?)\d{3}([ -]?)\d{4})$/;
+        var regex_phone =  /^(?:(?:\+|0{0,2})91(\s*[\ -]\s*)?|[0]?)?[789]\d{9}|(\d[ -]?){10}\d$/;
         var valid_phone = regex_phone.test(phone);
         if(!valid_phone){
             jQuery('#phone').after('<span class="error">Enter a valid phone number</span>');
