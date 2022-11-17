@@ -53,7 +53,7 @@ jQuery(document).on('click', '.accordion_section h3', function(){
 jQuery(document).on('click','.contact_submit', function(event){
     event.preventDefault();
     console.log("preventing from form submission");
-    var flag = false;
+    var flag = true;
     var name = jQuery('#name').val();
     var email = jQuery('#email').val();
     var phone = jQuery('#phone').val();
@@ -65,35 +65,31 @@ jQuery(document).on('click','.contact_submit', function(event){
     if(name.length < 2){
         // alert("enter the valid number");
         jQuery('#name').after('<span class="error">This field is required</span>');
-    }else{
-        flag = true;
+        flag = false
     }
-    
     if(email.length < 2){
         jQuery('#email').after('<span class="error">This field is required</span>');
+        flag = false
     } else{
         var regex_email = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
         var validEmail = regex_email.test(email);
         if(!validEmail){
             jQuery('#email').after('<span class="error">Enter a valid email</span>');
+            flag = false
         }
-        else{
-        flag = true;
-    }
     }
     if (phone.length!=10){
         jQuery('#phone').after('<span class="error">This field is required</span>');
+        flag = false
     } else {
         var regex_phone =  /^(?:(?:\+|0{0,2})91(\s*|[\-])?|[0]?)?([6789]\d{2}([ -]?)\d{3}([ -]?)\d{4})$/;
         var valid_phone = regex_phone.test(phone);
         if(!valid_phone){
             jQuery('#phone').after('<span class="error">Enter a valid phone number</span>');
+            flag = false
         }
-        else{
-        flag = true;
     }
-    }
-    if (flag==true){
+    if (flag){
         jQuery('form').submit();
     }
 });

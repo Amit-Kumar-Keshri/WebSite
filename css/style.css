@@ -1057,7 +1057,6 @@ textarea {
 .btn {
     width: 30%;
     padding: 0.5rem 1rem;
-    /* background-color: orange; */
     background-color: #2d2640;
     color: #fff;
     font-size: 1.1rem;
@@ -1066,6 +1065,7 @@ textarea {
     cursor: pointer;
     transition: .3s;
     margin-left: 35%;
+    margin-top: 25px;
 }
 
 .btn:hover {
@@ -1349,6 +1349,7 @@ a {
     position: relative;
     margin-top: 50px;
     float: left;
+    width: 90%;
 }
 
 .contact-box .col_box {
@@ -1362,6 +1363,7 @@ a {
 
 .accordion_section {
     margin-right: 40px;
+    padding: 20px;
 }
 
 .accordion_section h3 {
